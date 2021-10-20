@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia del Tren</title>
+
+    <style>
+
+        /*####ENLACE A LAS FUNETES DE GOOGLE####*/
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto+Mono:wght@700&family=Source+Code+Pro:ital,wght@1,700&display=swap');
+        
+        /*Propiedad para desplazar la página de forma suave*/
+        html { scroll-behavior: smooth; }
+
+        /*####TITULARES Y TEXTO####*/
+
+        p {
+            font-size: 1.4rem;
+            font-family: 'Courier New', sans-serif, monospace;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+            text-align: center;
+            color: #449AEB;
+            text-shadow: 0 4px 6px rgb(80, 151, 245);
+            font-family: 'Source Code Pro', monospace
+        }
+
+        h1 {
+            font-size: 8vw;
+        }
+
+        h2 {
+            font-size: 3rem;
+            color: #449AEB;
+        }
+
+        h3 {
+            text-align: left;
+            font-size: 2rem;
+            color: rgb(0, 76, 148);
+            text-shadow: 0 4px 8px rgb(0, 0, 0);
+        }
+
+        /*#### ESTRUCTURA ####*/
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #dbdbdb;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .anchototal {
+            background: grey no-repeat top center;
+            background-size: cover;
+            color: #dbdbdb;
+            text-shadow: 0 2px 6px black;
+            padding: 20px;
+        }
+
+        .parallax {
+            background-attachment: fixed;
+        }
+
+
+
+        .contenedor {
+            width: calc(100% - 40px);
+            max-width: 1400px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .tercio {
+            float: left;
+            width: 66.6%;
+            padding: 20px;
+        }
+
+        .volver {
+            color: rgb(26, 26, 26);
+            text-shadow: 0 4px 6px rgb(80, 151, 245);
+            text-decoration: none;
+            font-size: 2rem;
+            padding: 5px 20px;
+            margin-bottom: 40px;
+        }
+
+        .enlace {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 1.4rem;
+            text-decoration: none;
+            color: #E7EB28;
+            text-shadow: 0 2px 6px black;
+            margin: 20px;
+        }
+
+        .enlace:hover {
+            color: #A69292;
+        }
+
+
+
+        /*####ELEMENTOS####*/
+        header {
+            background-image: url("imagenes/tren-portada.jpg") !important;
+            height: 100vh;
+            padding-top: 60vh !important;
+        }
+
+        #vapor {
+            background-image: url(imagenes/tren-vapor.jpg);
+            padding-top: 60vh;
+        }
+
+        #electrico {
+            background-image: url(imagenes/tren-electrico.jpg);
+            padding-top: 60vh;
+        }
+
+        #ave {
+            background-image: url(imagenes/tren-ave2.jpg);
+            padding-top: 60vh;
+        }
+
+        #bala {
+            background-image: url(imagenes/tren-bala.jpg);
+            padding-top: 60vh;
+        }
+
+        #footer {
+            background: url(imagenes/tren-footer.jpg) no-repeat center fixed;
+            background-size: cover;
+            padding-bottom: 130vh;
+        }
+        /*####BARRA DE NAVEGACIÓN####*/
+
+        nav {
+            position: fixed;
+            width: 100%;
+            z-index: 2;
+            background-color: #dbdbdb !important;
+            text-align: center;
+            padding: 5px !important;
+        }
+
+        nav a {
+            color: rgb(26, 26, 26);
+            text-shadow: 0 4px 6px rgb(80, 151, 245);
+            text-decoration: none;
+            font-size: 2rem;
+            padding: 5px 20px;
+        }
+
+        nav a:hover {
+            color: #449AEB;
+            text-shadow: 0 8px 12px rgb(15, 28, 46);
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <nav class="anchototal">
+        <a href="#inicio">Inicio</a>
+        <a href="#cap1">Capítulo 1</a>
+        <a href="#vapor">Capítulo 2</a>
+        <a href="#electrico">Capítulo 3</a>
+        <a href="#ave">Capítulo 4</a>
+        <a href="#bala">Capítulo 5</a>
+    </nav>
+
+    <header id="inicio" class="anchototal parallax">
+        <h1>Historia del tren</h1>
+        <h3 id="cap1" style="color: white; text-align: center;">La página dedicada a las personas que no quieren perder el tren</h3>
+    </header>
+    
+    <h2>Capítulo 1: ¿Qué es un tren?</h2>
+
+    <div class="contenedor">
+        <div class="tercio">
+            <img src="imagenes/Dresina.jpg" alt="">
+            <h4 style="margin-top: 0;">Dresina: Vagoneta manual</h4>
+        </div>
+
+        <p>Un tren es una serie de vehículos que puede ser arrastrado 
+        por una locomotora o puede ser autopropulsado. Parte integrante de un ferrocarril 
+        son las vías sobre las que discurren los trenes.</p>
+        <p> De una forma u otra, las vías 
+        fueron muy anteriores al tren de vapor. Los primeros convoyes contaban con la 
+        fuerza humana para ser empujados a lo largo de las vías. </p>
+    </div>
+    <a href="#inicio" class="volver">Volver a Inicio</a>
+
+    <div id="vapor" class="anchototal parallax">
+        <h3>Locomotora de vapor</h3>
+    </div>
+
+
+    <div class="contenedor">
+            <h2>Capítulo 2: El alba de la época del vapor</h2>
+
+    <p>Desde que Thomas Newcomen, en 1712, y James Watt, en 1769, 
+      concibieron las primeras máquinas prácticas de vapor, los ingenieros trataron 
+      de aprovechar esta fuerza para propulsar un vehículo. </p>
+    <p>El primero de este tipo 
+      era difícil de conducir y suscitó tales proptestas en las calles de París que 
+      el proyecto tuvo que ser abandonado. </p>
+    <p>Las primeras locomotoras funcionales no 
+      surgieron hasta comienzos del siglo XIX, aunque padecían aún numerosos problemas 
+      técnicos. Las máquinas debían de tener potencia suficiente para arrastrar una 
+      pesada carga y hacer tan poco ruido y humo como fuese posible. Exigían también 
+      vías lisas que no se partieran bajo su peso y a las que pudieran aferrarse las 
+      ruedas. </p>
+      <a href="#inicio" class="volver">Volver a Inicio</a>
+      </div>
+
+    <div id="electrico" class="anchototal parallax">
+        <h3 style="color: white;">Locomotora eléctrica</h3>
+    </div>
+
+    <div class="contenedor">
+    <h2>Capítulo 3: Cómo funciona una locomotora de vapor</h2>
+    <p>Todas las locomotoras de vapor se basan en los principios de 
+      las primeras. </p>
+    <p>El fuego de carbón en el hogar calienta el agua de la caldera, 
+      produciendo vapor. Este desplaza un pistón de 
+      un lado a otro. El pistón hace girar las ruedas a través de una biela y un cigüeñal. 
+      Maquinista y fogonero necesitan unas tres horas hasta conseguir vapor suficiente 
+      para que se mueva la locomotora.</p>
+    <p>El maquinista se encargaba del control de la locomotora, empleando el regulador, 
+      el inversor y el freno. Mantenía la velocidad del tren según las señales y las 
+      restricciones de la vía. </p>
+    <p>El fogonero atendía sobre todo a conservar un buen 
+      volumen de vapor, alimentando el fuego y un nivel adecuado de agua en la caldera, 
+      vigilando el manómetro. El fogonero 
+      ayudaba además al maquinista a observar las señales, sobre todo en las curvas.</p>
+      <a href="#inicio" class="volver">Volver a Inicio</a>
+    </div>
+
+    <div id="ave" class="anchototal parallax">
+        <h3>Locomotora del Ave</h3>
+    </div>
+
+    <div class="contenedor">
+    <h2>Capítulo 4: El tendido de una línea férrea</h2>
+    <p>El tendido de una línea supone más trabajo del que podría imaginarse. 
+      Como los trenes no pueden remontar cuestas muy pendientes, quizá la distancia 
+      más corta entre dos puntos no sea la más fácil. </p>
+    <p>A menudo han de seguir trazados 
+      más largos y menos abruptos. Para mantener las vías en el mismo nivel tanto 
+      como sea factible hay que hacer terraplenes, tajos, puentes y túneles. El ingeniero 
+      selecciona la ruta, decidiendo cuál puede ser la pendiente máxima. También hay 
+      que tomar en consideración el tipo de trenes que se utilizarán y el equilibrio 
+      entre carga y velocidad. Cabe evitar con "eses" o espirales las cuestas muy 
+      pronunciadas. Puentes y túneles son caros, pero permiten un trazado más corto 
+      y horizontal.</p>
+    <p>Para tender líneas públicas largas se necesitaron ejércitos de obreros, porque 
+      eran escasa la maquinaria disponible. Para cavar, tender vías y construir puentes 
+      empleaban herramientas manuales y la fuerza de sus músculos. </p>
+      <a href="#inicio" class="volver">Volver a Inicio</a>
+    </div>
+
+    <div id="bala" class="anchototal parallax">
+        <h3>Tren Bala de levitación Magnética</h3>
+    </div>
+   
+
+    <div class="contenedor">
+    <h2>Capítulo 5: Las vías</h2>
+    <p>Las vías han sido decisivas en la historia de los trenes. Los 
+      primeros carriles de hierro fundido se rompían fácilmente. Los carriles de hierro 
+      fundido fueron reemplazados por otros de hierro forjado y a partir de 1870 se 
+      utilizaron los de acero, que apenas se desgastaban. Las vías se mejoraban para 
+      adaptarse a trenes más veloces y pesados.</p>
+    <p> La mayoría de las líneas principales 
+      tienen ahora carriles soldados en vez de los segmentados que antaño producían 
+      el característico traqueteo. Los ingenieros experimentaron muchos tamaños y 
+      formas de carril hasta lograr el mejor modelo, el de "patín plano". </p>
+    <p>La distancia 
+      entre los carriles se denomina ancho de vía y varía en todo el mundo. El ancho 
+      estándar de vía en la mayoría de los países europeos y Estados Unidos es de 
+      1.435 mm. Hay otras medidas mayores y menores que la estándar.</p>
+      <a href="#inicio" class="volver">Volver a Inicio</a>
+    </div>
+
+    <footer class="anchototal">
+        <div id="footer">
+            <h3>Ciencia Ficción: Tren futurista</h3>        
+        </div>
+        <h3>Creado por Jorge Agulló</h3>
+        <a href="#inicio" class="volver">Volver a Inicio</a>
+    </footer>
+
+    <a class="enlace" target="_blank" title="Web propietaria de la imagen del ten futurista" href="https://wall.alphacoders.com/big.php?i=1026939&lang=Spanish">Tren futurista</a>
+    <a class="enlace" target="_blank" title="Vídeo sobre los trenes bala de Japón" href="https://www.youtube.com/watch?v=6M3kMOmtpwM&ab_channel=ElConfidencial">Tren Bala</a>
+    <a class="enlace" target="_blank" title="Acceso a la web de renfe" href="https://www.renfe.com/es/es/grupo-renfe/sociedades/renfe-viajeros/viajeros-conocenos/alta-velocidad">Renfe</a>
+    <a class="enlace" target="_blank" title="Wikipedia: el primer ten eléctrico" href="https://es.wikipedia.org/wiki/Locomotora_el%C3%A9ctrica#:~:text=El%20primer%20tren%20el%C3%A9ctrico%20fue,m%C3%A1xima%20de%2013%20km%2Fh.">Primer tren eléctrico</a>
+    <a class="enlace" target="_blank" title="Imagenes de locomotoras a vapor" href="https://www.google.com/search?q=locomotoras+de+vapor&sxsrf=ALeKk03cST0yUFNsSfrtokwJQlyM6MWV-w:1619558827398&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjm6-Xkrp_wAhWMA2MBHZ8zDoIQ_AUoAXoECAMQAw&biw=1920&bih=937">Imagenes de locomotoras a vapor</a>
+
+
+    
+
+
+</body>
+</html>
